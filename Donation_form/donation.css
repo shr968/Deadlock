@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #2e1131;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgb(241, 209, 241);
+    color: #2e1131;
+    border:rgba(201, 125, 216, 0.979);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.button-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.item-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: purple;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.item-button.selected {
+    background-color:#2e1131;
+    color: pink;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #2e1131;
+    color: pink;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.thank-you {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    color: purple;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.item-count, .individual-item-counts {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.individual-item-counts {
+    background-color:white;
+    color: purple ;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.iich{
+    margin: 0;
+    padding: 5px;
+    color: pink;
+    border: 2px solid #2e1131;
+    border-radius: 15px;
+}
+.individual-item-counts h3 {
+    color: #2e1131;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Donation Form</h1>
+    <form id="donationForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="contact">Your Contact Number:</label>
+        <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" placeholder="Enter your 10-digit contact number" required>
+
+        <label for="place">Your Place (Location):</label>
+        <input type="text" id="place" name="place" required>
+
+        <fieldset class="button-group">
+            <legend><h3>Select Items to Donate</h3></legend>
+            <button type="button" id="clothesButton" class="item-button" data-item="Clothes">Clothes</button>
+            <button type="button" id="foodButton" class="item-button" data-item="Food">Food</button>
+            <button type="button" id="cleaningSuppliesButton" class="item-button" data-item="Cleaning supplies">Cleaning supplies</button>
+            <button type="button" id="personalHygieneButton" class="item-button" data-item="Personal hygiene items">Personal hygiene items</button>
+            <button type="button" id="medicationButton" class="item-button" data-item="Medication">Medication</button>
+        </fieldset>
+
+        <button type="submit">Donate</button>
+    </form>
+
+    <div class="thank-you" id="thankYouMessage"></div>
+
+    <div class="item-count" id="itemCount">Total Items Collected: 0</div>
+
+    <div class="individual-item-counts" id="individualItemCounts">
+        <div class="iich"><h3>Individual Item Counts:</h3></div>
+        <p>Clothes: <span id="clothesCount">0</span></p>
+        <p>Food: <span id="foodCount">0</span></p>
+        <p>Cleaning supplies: <span id="cleaningSuppliesCount">0</span></p>
+        <p>Personal hygiene items: <span id="personalHygieneCount">0</span></p>
+        <p>Medication: <span id="medicationCount">0</span></p>
+    </div>
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
