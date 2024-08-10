@@ -2,19 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #15202b;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: background-color 0.3s, color 0.3s;
 }
-body.light-mode {
-    background-color: #f5f5dc; /* Beige */
-    color: #000; /* Black */
+body.light-mode{
+     background-color: #f8ecf8;
 }
 
 .logo {
@@ -26,36 +25,160 @@ body.light-mode {
     padding: 50px 20px;
 }
 .website-heading #tagline {
-    font-size: 18px;
-    color: #ffcc00;
+    font-size: 15px;
+    color: #c6c0c7;
+}
+body.light-mode .website-heading #tagline{
+    color: rgb(164, 63, 164);
 }
 .website-heading #welcome {
-    font-size: 48px;
+    font-size: 80px;
+    background: linear-gradient(to top, rgb(210, 217, 220), #8f31be);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
     font-weight: bold;
     margin: 20px 0;
 }
+body.light-mode .website-heading #welcome{
+    background: linear-gradient(to top, rgb(23, 9, 26), #8f31be);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+}
+
 .website-heading #subheading {
-    font-size: 20px;
-    color: #d1d1d1;
-    margin-bottom: 30px;
+    font-size: 15px;
+    color: #bdb5c5;
+    font-weight: 200;
 }
 body.light-mode .website-heading #subheading {
-    color:#333; /* Dark text for light mode */
+    color:#a055a7; /* Dark text for light mode */
+}
+
+#user-name{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(210, 180, 221);
+}
+body.light-mode #user-name{
+    color: #370d3c;
 }
 
 .website-heading #volunteer-signup{
-    font-size: 20px;
-    color: #d1d1d1;
+    font-size: 15px;
+    color: #b9a3bd;
     margin: 0px 20px;
     margin-bottom: 30px;
+    font-weight: 200;
+}
+body.light-mode #volunteer-signup{
+    color: #370d3c;
 }
 .cta-button {
-    background-color: #ffcc00;
-    color: #15202b;
-    padding: 15px 30px;
-    border: none;
+    background-color: transparent;
+    border: 2px solid #C8ACD6;
+    color: #cdb8d4;
+    margin-top:8px;
+    padding: 15px 15px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
 }
+body.light-mode .cta-button{
+    background-color: #370d3c;
+}
+.volunteer{
+    max-width: 350px;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, rgb(205, 160, 208), purple);
+    padding: 3px;
+    margin:50px;
+    border: none;
+    border-radius: 8px;
+}
+body.light-mode .volunteer{
+    background: linear-gradient(to right, rgb(136, 23, 144), purple);
+}
+.volunteer-inside{
+    border-radius: 8px;
+    background: black;
+    color: white;
+    padding: 2rem;
+}
+body.light-mode .volunteer-inside{
+    background: rgb(233, 217, 233);
+    
+}
+#about{
+    max-width: 800px;
+    background-color:#000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+        linear-gradient(
+        to bottom, 
+        rgb(103, 39, 118), 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+}
 
+body.light-mode #about{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #faf9fa;
+}
+
+.about-heading{
+    background: linear-gradient(to top, rgb(210, 217, 220), #8f31be);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+    font-size: 40px;
+}
+body.light-mode .about-heading{
+    background: linear-gradient(to top, rgb(23, 9, 26), #8f31be);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+}
+.about-info{
+    padding: 20px;
+    color:#bdb5c5
+}
+body.light-mode .about-info{
+    color: purple;
+}
+
+#services{
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+.services-heading{
+    background: linear-gradient(to top, rgb(210, 217, 220), #8f31be);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+    font-size: 40px;
+}
+body.light-mode .services-heading{
+    background: linear-gradient(to top, rgb(23, 9, 26), #8f31be);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+}
+#resources{
+    background-color: #000;
+}
+body.light-mode #resources{
+    background-color: #faf9fa;
+    padding: 20px;
+}

@@ -7,7 +7,7 @@
 }
 
 footer {
-    background-color: #2d2e33;
+    background-image: linear-gradient(#040404, #2e1131);
     color: #bdb6b6;
     padding: 60px 10%;
     position: relative;
@@ -18,6 +18,10 @@ footer {
     border-top-left-radius: 143px;
     border-bottom-right-radius: 143px;
     animation: animate 7s linear infinite;
+}
+body.light-mode footer{
+    background-image: linear-gradient(#d9b7e6, #1e111f);
+    color:#2e1131
 }
 /* @keyframes animate{
     30%{    border-top-left-radius: 143px    }
@@ -46,10 +50,13 @@ footer {
 
 .footer-col h4 {
     font-size: 20px;
-    color: #f1bc0d;
+    color: rgb(206, 176, 219);
     text-transform: capitalize;
     margin-bottom: 20px;
     position: relative;
+}
+body.light-mode .footer-col h4{
+    color:#1e111f
 }
 
 .footer-col h4::before {
@@ -59,7 +66,7 @@ footer {
     bottom: -8px;
     width: 40px;
     height: 2px;
-    background-color: #27c0ac;
+    background-color: #a92075;
 }
 
 .footer-col p {
@@ -75,7 +82,7 @@ footer {
     color: white;
 }
 .footer-icons i:hover{
-    color: #f1bc0d;
+    color: purple;
     transform: translateY(-5px);
 }
 .footer-col ul {
@@ -91,6 +98,9 @@ footer {
     color: #bdb6b6;
     text-decoration: none;
     transition: 0.4s;
+}
+body.light-mode .footer-col ul li a{
+    color:#2e1131
 }
 
 .footer-col ul li a:hover {
@@ -111,7 +121,7 @@ footer {
     color: #bdb6b6;
 }
 .footer-bottom p:hover{
-    color: #f1bc0d;
+    color: white;
 }
 
 @media (max-width: 768px) {

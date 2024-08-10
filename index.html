@@ -16,13 +16,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
     <title>Navbar Active Link On Scroll HTML CSS JS | Codehal</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="#">Logo</a></div>
+            <div class="logo"><img src="#" alt=""></div>
             <ul class="links">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -56,37 +59,54 @@
     <section class="main">
             <div class="website-heading">
                 <p id="tagline">"Always Prepared, Always Protected."</p>
-                <p id="welcome">Welcome to Rescue-Ready <span id="user-name"></span></p>
+                <p id="welcome">RESCUE-READY </p>
+                <p id="user-name">WELCOME </p>
                 <p id="subheading">A one stop solution for all your problems. Stay Safe, Stay Alert. We are ready to help you!</p>
-                <p id="volunteer-signup">If you are ready to volunteer for help in your areas, please register yourself</p>
-                <button class="cta-button">Volunteer Sign up</button>
             </div>
-            <div class="card-container">
-                <div class="card">
-                    <img src="#">
-                    <div class="card-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio velit repellat suscipit tempora quisquam temporibus facilis. Perspiciatis sint iure, praesentium voluptatum, similique amet molestias sequi natus eaque consequuntur architecto?</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="#">
-                    <div class="card-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio velit repellat suscipit tempora quisquam temporibus facilis. Perspiciatis sint iure, praesentium voluptatum, similique amet molestias sequi natus eaque consequuntur architecto?</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="#">
-                    <div class="card-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio velit repellat suscipit tempora quisquam temporibus facilis. Perspiciatis sint iure, praesentium voluptatum, similique amet molestias sequi natus eaque consequuntur architecto?</p>
-                    </div>
-                </div>
-            </div>
+                <div class="volunteer">
+                    <div class="volunteer-inside">
+                        <p id="volunteer-signup" style="margin-bottom:12px;">If you are ready to volunteer for help in your areas, please register yourself</p>
+                        <button class="cta-button">Volunteer Sign up</button>
+                    </div> 
+                </div> 
     </section>
 
-    <section id="about">About</section>
-    <section id="services">Services</section>
+    <section id="about">
+        <div class="about">
+            <div class="about-heading">
+                ABOUT HEADING
+            </div>
+            <div class="about-info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio velit repellat suscipit tempora quisquam temporibus facilis. Perspiciatis sint iure, praesentium voluptatum, similique amet molestias sequi natus eaque consequuntur architecto?</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h1 class="services-heading">SERVICES</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="#">
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio velit repellat suscipit tempora quisquam temporibus facilis. Perspiciatis sint iure, praesentium voluptatum, similique amet molestias sequi natus eaque consequuntur architecto?</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="#">
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio velit repellat suscipit tempora quisquam temporibus facilis. Perspiciatis sint iure, praesentium voluptatum, similique amet molestias sequi natus eaque consequuntur architecto?</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="#">
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio velit repellat suscipit tempora quisquam temporibus facilis. Perspiciatis sint iure, praesentium voluptatum, similique amet molestias sequi natus eaque consequuntur architecto?</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="resources">
-        <h1 id="wall-of-fury">RESCUE <span class="gallery-header" style="color: #9742ff;">READY!</span></h1>
+        <h1 id="wall-of-fury">RESCUE <span class="gallery-header" style="color: #9f33bb;">READY!</span></h1>
         <div class="slider">
             <div class="slide-track">
                 <div class="slide" style="margin-right: 60px;">
