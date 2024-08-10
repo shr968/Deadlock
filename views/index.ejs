@@ -8,22 +8,16 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./styles/Style.css">
-    <link rel="stylesheet" href="./styles/Style.css">
-    <!-- <link rel="stylesheet" href="./styles/login.css"> -->
-    <link rel="stylesheet" href="./styles/landing.css">
-    <link rel="stylesheet" href="./styles/cards.css">
-    <link rel="stylesheet" href="./styles/sliders.css">
-    <link rel="stylesheet" href="./styles/footer1.css">
-    <link rel="stylesheet" href="./styles/Style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/Style.css">
+    <link rel="stylesheet" href="/styles/landing.css">
+    <link rel="stylesheet" href="/styles/cards.css">
+    <link rel="stylesheet" href="/styles/sliders.css">
+    <link rel="stylesheet" href="/styles/footer1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
-    <title>Navbar Active Link On Scroll HTML CSS JS | Codehal</title>
+    <title>Volunteer Dashboard</title>
 </head>
 <body>
     <header>
@@ -36,11 +30,9 @@
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="#" class="action_btn">
             <form action="/login" method="GET">
                 <button type="submit" class="action_btn">Login</button>
             </form>
-            </a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i> 
             </div>
@@ -58,197 +50,21 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#resources">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#" class="action_btn"><form action="/login" method="GET">
+                <form action="/login" method="GET">
                     <button type="submit" class="action_btn">Login</button>
                 </form>
-                </a></li>
             </ul>   
         </div>
     </header>
     
-    <section class="main">
-            <div class="website-heading">
-                <p id="tagline">"Always Prepared, Always Protected."</p>
-                <!-- <p id="welcome">RESCUE-READY </p>
-                <p id="user-name">WELCOME </p> -->
-                <h1 style="font-size: x-large;">Hello, <%= name %>!</h1>
-                <p id="subheading">A one stop solution for all your problems. Stay Safe, Stay Alert. We are ready to help you!</p>
-            </div>
-            <div class="volunteer">
-                <div class="volunteer-inside">
-                    <p id="volunteer-signup" style="margin-bottom:12px;">If you are ready to volunteer for help in your areas, please register yourself</p>
-                    <form action="/form" method="GET"><button class="cta-button">Volunteer Sign up</button></form>
-                    <form action="/main" method="GET"><button class="cta-button">Find Volunteers!</button></form>
-                </div> 
-            </div> 
-    </section>
-
-    <section id="about">
-        <div class="about">
-            <div class="about-heading">
-                ABOUT HEADING
-            </div>
-            <div class="about-info">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio velit repellat suscipit tempora quisquam temporibus facilis. Perspiciatis sint iure, praesentium voluptatum, similique amet molestias sequi natus eaque consequuntur architecto?</p>
+    <section class="home" id="home">
+        <div class="home_content">
+            <div class="home-details">
+                <h1>Welcome, <%= name %>!</h1>
+                <p>Join us in making a difference!</p>
+                <a href="/main" class="btn">View Volunteers</a>
             </div>
         </div>
     </section>
-
-    <section id="services">
-        <h1 class="services-heading">SERVICES</h1>
-        <div class="card-container">
-            <div class="card">
-                <div class="card-content">
-                    <p>"Make a Difference Today!
-                        Your donation can change lives. Whether it's a small contribution or a larger gift, every donation helps provide essential resources to those in need. Join us in making a positive impact and supporting our cause. Together, we can create a better future.</p>
-                </div>
-                <button class="Know-more-card"><a href="https://donation-two-beta.vercel.app/">Know-more</a></button>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <p>GDACS provides real-time alerts about natural disasters such as earthquakes, tsunamis, and cyclones. It offers detailed information and maps to help users understand the impact of these events. Users can also subscribe to receive alerts based on their location.</p>
-                </div>
-                <button class="know-more-card"><a href="https://www.gdacs.org/" target="_blank">Know More</a></button>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <p>Geolocation uses your device's latitude and longitude to deliver location-specific alerts like weather updates and emergency warnings. By tracking your exact position, it ensures you receive timely, relevant information to stay informed and safe based on your current location.</p>
-                </div>
-                <button class="know-more-card"><a href="">Know More</a></button>
-            </div>
-        </div>
-    </section>
-    <section id="resources">
-        <h1 id="wall-of-fury">RESCUE <span class="gallery-header" style="color: #9f33bb;">READY!</span></h1>
-        <div class="slider">
-            <div class="slide-track">
-                <div class="slide" style="margin-right: 60px;">
-                    <img src="#">
-                </div>
-                <div class="slide">
-                    <img src="#">
-                </div>
-                <div class="slide">
-                    <img src="#">
-                </div>
-                <div class="slide">
-                    <img src="#">
-                </div>
-                <div class="slide">
-                    <img src="./assets/images/pic5.jpeg">
-                </div>
-                <div class="slide">
-                    <img src="./assets/images/pic6.jpeg">
-                </div>
-                <div class="slide" style="margin-right: 60px;">
-                    <img src="./assets/images/pic7.jpeg">
-                </div>
-                <div class="slide">
-                    <img src="./assets/images/pic8.jpeg">
-                </div>
-                <div class="slide">
-                    <img src="./assets/images/pic9.jpeg">
-                </div>
-
-                <!-- same slide -->
-                <div class="slide">
-                    <img src="./assets/images/pic1.jpeg">
-                </div>
-                <div class="slide">
-                    <img src="./assets/images/pic2.jpeg">
-                </div>
-                <div class="slide">
-                    <img src="./assets/images/pic3.jpeg">
-                </div>
-                <div class="slide">
-                    <img src="./assets/images/pic4.jpeg">
-                </div>
-                <div class="slide">
-                    <img src="./assets/images/pic5.jpeg">
-                </div>
-                <div class="slide">
-                    <img src="./assets/images/pic6.jpeg">
-                </div>
-                <div class="slide">
-                    <img src="./assets/images/pic7.jpeg">
-                </div>
-                <div class="slide">
-                    <img src="./assets/images/pic8.jpeg">
-                </div>
-                <div class="slide">
-                    <img src="./assets/images/pic9.jpeg">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <footer>
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h4>About Us</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti molestias modi minima doloribus
-                        vero quasi. Aliquam debitis facere dolorum non?</p>
-                    <div class="footer-icons">
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Menu</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help Center</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-icons">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><a href="#"><i class="fa-solid fa-envelope"></i>Email: info@example.com</a></li>
-                        <li><a href="#"><i class="fa-solid fa-phone"></i>Phone: +123 456 7890</a></li>
-                        <li><a href="#"><i class="fa-solid fa-location-pin"></i>Address: 123 Main Street, Anytown, USA</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Copyright &copy;2024 | Codefury-7.O</p>
-            </div>
-        </footer>
-    </section>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let index = 0;
-            function typeEffect() {
-                if (index < welcomeText.length) {
-                    document.getElementById("user-name").innerHTML += welcomeText.charAt(index);
-                    index++;
-                    setTimeout(typeEffect, 150);
-                }
-            }
-            typeEffect();
-
-            // Toggle light/dark mode
-            const modeToggle = document.getElementById('modeToggle');
-            modeToggle.addEventListener('change', () => {
-                document.body.classList.toggle('light-mode');
-            });
-        });
-    </script>
-    <script src="/script.js"></script>
 </body>
 </html>
