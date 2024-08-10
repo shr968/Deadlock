@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <video autoplay loop muted playsinline class="background-clip">
+                <source src="/assets/2611250-uhd_3840_2160_30fps.mp4" type="video/mp4">
+              </video>            
+            <h1 style="margin-top: 25px;">Sign Up</h1>
+            <div class="form-content">
+            <form method="post" action="/signup">
+                <label class="name">Name</label>
+                <input placeholder="Name" name="name" type="text">
+                <label class="name">Email</label>
+                <input type="text" name="email" placeholder="Email">
+                <label class="password">Password</label>
+                <input type="password" name="password" placeholder="Password">
+                <center><button class="Submit">Submit</button></center>
+            </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const video = document.querySelector('.background-clip');
+        video.playbackRate=0.5
+    </script>
+</body>
+</html>

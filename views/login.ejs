@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <video autoplay loop muted playsinline class="background-clip">
+        <source src="/assets/2611250-uhd_3840_2160_30fps.mp4" type="video/mp4">
+    </video>      
+    <div class="container">
+        <div class="content">
+            <h1>Login</h1>
+            <div class="form-content">
+                <% if (typeof error !== 'undefined') { %>
+                    <script>alert("<%= error %>");</script>
+                <% } %>
+                <form method="post" action="/login">
+                    <label class="email">Email</label>
+                    <input placeholder="Email" name="email" type="text">
+                    <label class="password">Password</label>
+                    <input placeholder="Password" name="password" type="password">
+                    <button class="Submit">Submit</button>
+                </form>
+            </div>
+            <p>Don't have an account? <a href="/signup" style="color: white;">Sign Up</a></p>
+        </div>
+    </div>
+</body>
+</html>
