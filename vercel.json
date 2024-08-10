@@ -42,7 +42,12 @@
       {
         "src": "/(.*)",
         "dest": "/src/server.js"
-      }
+      },
+    {
+  "src": "/public/(.*)",
+  "dest": "/public/$1"
+}
+
     ]
   }
   
