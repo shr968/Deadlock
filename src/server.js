@@ -125,7 +125,9 @@ app.get('/main', async (req, res) => {
         res.status(500).send('Error fetching volunteers');
     }
 });
-
+app.get('/index',(req,res)=>{
+    res.redirect('index')
+})
 app.get('/thanks', (req, res) => {
     res.render('thanks');
 });
