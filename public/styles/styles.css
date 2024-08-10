@@ -26,6 +26,7 @@ body {
     font-weight: bold;
     background: linear-gradient(to right, #ff6f61, #8f31be);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     margin-bottom: 20px;
 }
