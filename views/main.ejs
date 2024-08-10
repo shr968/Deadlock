@@ -3,28 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volunteers</title>
-    <link rel="stylesheet" href="/styles/cards.css">
+    <title>Volunteer List</title>
+    <link rel="stylesheet" href="/styles/login.css">
+    <style>
+        /* Add these styles to your login.css file */
+table {
+    width: 100%;
+    border-collapse: separate; /* Ensures spacing is applied */
+    border-spacing: 0; /* Remove default spacing if needed */
+}
+
+th, td {
+    padding: 5px; /* Adjust this value to increase or decrease spacing */
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4; /* Optional: Add a background color for table headers */
+    color: black;
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Optional: Add borders for better visibility */
+}
+/* Add these styles to your login.css file */
+button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove default border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block for button alignment */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin to space out buttons */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Volunteer Details</h1>
-    </header>
+    <div class="container">
+        <div class="card">
+    <h1 style="margin-left: 50px;">Volunteer List</h1>
     
-    <main>
-        <div class="card-container">
-            <% if (volunteers.length > 0) { %>
-                <% volunteers.forEach(volunteer => { %>
-                    <div class="card">
-                        <h2><%= volunteer.fullName %></h2>
-                        <p>Region: <%= volunteer.region %></p>
-                        <p>Contact: <%= volunteer.contact %></p>
-                    </div>
-                <% }) %>
-            <% } else { %>
-                <p>No volunteers found for the selected region.</p>
-            <% } %>
-        </div>
-    </main>
+    <!-- Search form -->
+    <form action="/main" method="get">
+        <label for="region">Search by Region:</label>
+        <input type="text" id="region" name="region" placeholder="Enter region" value="<%= typeof region !== 'undefined' ? region : '' %>">
+        <button type="submit">Search</button>
+    </form>
+    
+    <!-- Display the list of volunteers -->
+    <table>
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Region</th>
+                <th>Contact Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% volunteers.forEach(volunteer => { %>
+                <tr>
+                    <td><%= volunteer.fullName %></td>
+                    <td><%= volunteer.region %></td>
+                    <td><%= volunteer.contact %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    </div>
+    </div>
 </body>
 </html>
