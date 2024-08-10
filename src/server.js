@@ -2,6 +2,12 @@ const mongoose = require('mongoose');
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '../views'));
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Create connections to both databases
 const loginDb = mongoose.createConnection('mongodb+srv://shreyanayakb26:shreyamongodb%4026@cluster0.ecrwf.mongodb.net/details?retryWrites=true&w=majority', {
@@ -35,17 +41,6 @@ volunteerDb.on('disconnected', () => {
 volunteerDb.on('error', (err) => {
     console.error('Volunteer database connection error:', err);
 });
-
-const app = express();
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '../views'));
-app.use(express.static(path.join(__dirname, '../public')));
-
-// Import models with respective connections
-const Details = require('./login')(loginDb);
-const Volunteer = require('./volunteerSchema')(volunteerDb);
 
 app.get('/', (req, res) => {
     res.redirect('/index');
