@@ -1,0 +1,94 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    color: white;
+}
+
+.background-clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.content h1 {
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+.form-content {
+    margin-bottom: 1em;
+}
+
+.form-content label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.form-content input {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1.5em;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background: #222;
+    color: white;
+}
+
+.form-content input::placeholder {
+    color: #888;
+}
+
+button.Submit {
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button.Submit:hover {
+    background: #0056b3;
+}
+
+p {
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
