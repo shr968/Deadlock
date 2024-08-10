@@ -11,8 +11,8 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, '../public')));
 
 // MongoDB connection URIs
-const loginDbUri = 'mongodb+srv://yourusername:yourpassword@cluster0.mongodb.net/details?retryWrites=true&w=majority';
-const volunteerDbUri = 'mongodb+srv://yourusername:yourpassword@cluster0.mongodb.net/volunteer?retryWrites=true&w=majority';
+const loginDbUri = 'mongodb+srv://shreyanayakb26:shreyamongodb%4026@cluster0.mongodb.net/details?retryWrites=true&w=majority';
+const volunteerDbUri = 'mongodb+srv://shreyanayakb26:shreyamongodb%4026@cluster0.mongodb.net/volunteer?retryWrites=true&w=majority';
 
 // Create connections to both databases
 const loginDb = mongoose.createConnection(loginDbUri, {
