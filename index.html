@@ -8,9 +8,16 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./nav-bar-style.css">
-    <title>Navbar Active Link On Scroll HTML CSS JS | Codehal</title>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="./landing.css">
+    <link rel="stylesheet" href="./cards/cards.css">
+    <link rel="stylesheet" href="./sliders/sliders.css">
+    <link rel="stylesheet" href="./footer/footer1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <title>Navbar Active Link On Scroll HTML CSS JS | Codehal</title>
 </head>
 <body>
     <header>
@@ -27,6 +34,12 @@
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i> 
             </div>
+            <div class="toggle-mode">
+                <label class="switch">
+                    <input type="checkbox" id="modeToggle">
+                    <span class="sliderbutton round"></span>
+                </label>
+            </div>
         </nav>
         <div class="dropdown_menu">
             <ul>
@@ -39,13 +52,171 @@
             </ul>   
         </div>
     </header>
-    <section id="home">Home</section>
+    
+    <section class="main">
+            <div class="website-heading">
+                <p id="tagline">"Always Prepared, Always Protected."</p>
+                <p id="welcome">Welcome to Rescue-Ready <span id="user-name"></span></p>
+                <p id="subheading">A one stop solution for all your problems. Stay Safe, Stay Alert. We are ready to help you!</p>
+                <p id="volunteer-signup">If you are ready to volunteer for help in your areas, please register yourself</p>
+                <button class="cta-button">Volunteer Sign up</button>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="#">
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio velit repellat suscipit tempora quisquam temporibus facilis. Perspiciatis sint iure, praesentium voluptatum, similique amet molestias sequi natus eaque consequuntur architecto?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="#">
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio velit repellat suscipit tempora quisquam temporibus facilis. Perspiciatis sint iure, praesentium voluptatum, similique amet molestias sequi natus eaque consequuntur architecto?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="#">
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio velit repellat suscipit tempora quisquam temporibus facilis. Perspiciatis sint iure, praesentium voluptatum, similique amet molestias sequi natus eaque consequuntur architecto?</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
     <section id="about">About</section>
     <section id="services">Services</section>
-    <section id="resources">Portfolio</section>
-    <section id="contact">Contact</section>
-    <section id="Login">Login</section>
-    
+    <section id="resources">
+        <h1 id="wall-of-fury">RESCUE <span class="gallery-header" style="color: #9742ff;">READY!</span></h1>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide" style="margin-right: 60px;">
+                    <img src="#">
+                </div>
+                <div class="slide">
+                    <img src="#">
+                </div>
+                <div class="slide">
+                    <img src="#">
+                </div>
+                <div class="slide">
+                    <img src="#">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/pic5.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/pic6.jpeg">
+                </div>
+                <div class="slide" style="margin-right: 60px;">
+                    <img src="./assets/images/pic7.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/pic8.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/pic9.jpeg">
+                </div>
+
+                <!-- same slide -->
+                <div class="slide">
+                    <img src="./assets/images/pic1.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/pic2.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/pic3.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/pic4.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/pic5.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/pic6.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/pic7.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/pic8.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/pic9.jpeg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <footer>
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti molestias modi minima doloribus
+                        vero quasi. Aliquam debitis facere dolorum non?</p>
+                    <div class="footer-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-icons">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i>Email: info@example.com</a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i>Phone: +123 456 7890</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-pin"></i>Address: 123 Main Street, Anytown, USA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy;2024 | Codefury-7.O</p>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const welcomeText = "USERNAME";
+            let index = 0;
+            function typeEffect() {
+                if (index < welcomeText.length) {
+                    document.getElementById("user-name").innerHTML += welcomeText.charAt(index);
+                    index++;
+                    setTimeout(typeEffect, 150);
+                }
+            }
+            typeEffect();
+
+            // Toggle light/dark mode
+            const modeToggle = document.getElementById('modeToggle');
+            modeToggle.addEventListener('change', () => {
+                document.body.classList.toggle('light-mode');
+            });
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
