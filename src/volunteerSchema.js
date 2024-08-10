@@ -15,4 +15,5 @@ const volunteerSchema = new mongoose.Schema({
     }
 });
 
-module.exports = (connection) => connection.model('Volunteer', volunteerSchema);
+const Volunteer = mongoose.model("Volunteer",volunteerSchema);
+module.exports=Volunteer;
