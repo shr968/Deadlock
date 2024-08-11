@@ -16,11 +16,11 @@ const volunteerDbUri = 'mongodb+srv://shreyanayakb26:shreyamongodb%4026@cluster0
 
 // Create connections to both databases
 const loginDb = mongoose.createConnection(loginDbUri, {
-    serverSelectionTimeoutMS: 30000
+    serverSelectionTimeoutMS: 60000
 });
 
 const volunteerDb = mongoose.createConnection(volunteerDbUri, {
-    serverSelectionTimeoutMS: 30000
+    serverSelectionTimeoutMS: 60000
 });
 
 // Monitor connections
