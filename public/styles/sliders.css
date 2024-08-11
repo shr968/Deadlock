@@ -110,3 +110,6 @@ display: inline;
   padding-top: 70px;
   margin-top: -70px;
 }
+.read-more a{
+  color: rgb(38, 0, 38);
+}
