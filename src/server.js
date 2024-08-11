@@ -11,15 +11,15 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, '../public')));
 
 // MongoDB connection URIs
-const loginDbUri = 'mongodb+srv://shreyanayakb26:shreyamongodb%4026@cluster0.mongodb.net/details?retryWrites=true&w=majority';
-const volunteerDbUri = 'mongodb+srv://shreyanayakb26:shreyamongodb%4026@cluster0.mongodb.net/volunteer?retryWrites=true&w=majority';
+const loginDbUri = 'mongodb+srv://shreyanayakb26:shreyamongodb%4026@cluster0.ecrwf.mongodb.net/details?retryWrites=true&w=majority';
+const volunteerDbUri = 'mongodb+srv://shreyanayakb26:shreyamongodb%4026@cluster0.ecrwf.mongodb.net/volunteer?retryWrites=true&w=majority';
 
 // Create connections to both databases
-const loginDb = mongoose.connection(loginDbUri, {
+const loginDb = mongoose.createConnection(loginDbUri, {
     serverSelectionTimeoutMS: 60000
 });
 
-const volunteerDb = mongoose.connection(volunteerDbUri, {
+const volunteerDb = mongoose.createConnection(volunteerDbUri, {
     serverSelectionTimeoutMS: 60000
 });
 
@@ -103,6 +103,10 @@ app.get('/main', async (req, res) => {
 
 app.get('/thanks', (req, res) => res.render('thanks'));
 app.get('/index', (req, res) => res.render('index', { name: "Volunteer" }));
+
+app.listen(4000,()=>{
+    console.log('Server active on port 4000');
+})
 
 // Export the app for Vercel
 module.exports = app;
