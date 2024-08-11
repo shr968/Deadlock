@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./styles/Style.css">
     <link rel="stylesheet" href="./styles/Style.css">
     <!-- <link rel="stylesheet" href="./styles/login.css"> -->
@@ -19,12 +18,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <title>Rescue-Ready</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -37,12 +39,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <a href="#" class="action_btn">
-            <form action="/login" method="GET">
-                <button type="submit" class="action_btn">Login</button>
-            </form>
+                <form action="/login" method="GET">
+                    <button type="submit" class="action_btn">Login</button>
+                </form>
             </a>
             <div class="toggle_btn">
-                <i class="fa-solid fa-bars"></i> 
+                <i class="fa-solid fa-bars"></i>
             </div>
             <div class="toggle-mode">
                 <label class="switch">
@@ -53,34 +55,37 @@
         </nav>
         <div class="dropdown_menu">
             <ul>
-               <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#resources">Resources</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#" class="action_btn"><form action="/login" method="GET">
-                    <button type="submit" class="action_btn">Login</button>
-                </form>
-                </a></li>
-            </ul>   
+                <li><a href="#" class="action_btn">
+                        <form action="/login" method="GET">
+                            <button type="submit" class="action_btn">Login</button>
+                        </form>
+                    </a></li>
+            </ul>
         </div>
     </header>
-    
+
     <section class="main">
-            <div class="website-heading">
-                <p id="tagline">"Always Prepared, Always Protected."</p>
-                <p id="welcome">RESCUE READY </p>
-                <!-- <p id="user-name">WELCOME </p> -->
-                <!-- <h1 style="font-size: x-large;">Hello, <%= name %>!</h1> -->
-                <p id="subheading">A one stop solution for all your problems. Stay Safe, Stay Alert. We are ready to help you!</p>
+        <div class="website-heading">
+            <p id="tagline">"Always Prepared, Always Protected."</p>
+            <p id="welcome">RESCUE READY </p>
+            <!-- <p id="user-name">WELCOME </p> -->
+            <!-- <h1 style="font-size: x-large;">Hello, <%= name %>!</h1> -->
+            <p id="subheading">A one stop solution for all your problems. Stay Safe, Stay Alert. We are ready to help
+                you!</p>
+        </div>
+        <div class="volunteer">
+            <div class="volunteer-inside">
+                <p id="volunteer-signup" style="margin-bottom:12px;">If you are ready to volunteer for help in your
+                    areas, please register yourself</p>
+                <form action="/form" method="GET"><button class="cta-button">Volunteer Sign up</button></form>
+                <form action="/main" method="GET"><button class="cta-button">Find Volunteers!</button></form>
             </div>
-                <div class="volunteer">
-                    <div class="volunteer-inside">
-                        <p id="volunteer-signup" style="margin-bottom:12px;">If you are ready to volunteer for help in your areas, please register yourself</p>
-                        <form action="/form" method="GET"><button class="cta-button">Volunteer Sign up</button></form>
-                        <form action="/main" method="GET"><button class="cta-button">Find Volunteers!</button></form>
-                    </div> 
-                </div> 
+        </div>
     </section>
 
     <section id="about">
@@ -89,7 +94,8 @@
                 WHO ARE WE?
             </div>
             <div class="about-info">
-                <p>Rescue Ready is dedicated to providing timely and effective assistance during disasters. Our mission is to ensure community safety through rapid response.</p>
+                <p>Rescue Ready is dedicated to providing timely and effective assistance during disasters. Our mission
+                    is to ensure community safety through rapid response.</p>
             </div>
         </div>
     </section>
@@ -100,21 +106,28 @@
             <div class="card">
                 <div class="card-content">
                     <p>"Make a Difference Today!
-                        Your donation can change lives. Whether it's a small contribution or a larger gift, every donation helps provide essential resources to those in need. Join us in making a positive impact and supporting our cause. Together, we can create a better future.</p>
+                        Your donation can change lives. Whether it's a small contribution or a larger gift, every
+                        donation helps provide essential resources to those in need. Join us in making a positive impact
+                        and supporting our cause. Together, we can create a better future.</p>
                 </div>
                 <button class="know-more-card"><a href="https://donation-two-beta.vercel.app/">Know more</a></button>
             </div>
             <div class="card">
                 <div class="card-content">
-                    <p>GDACS provides real-time alerts about natural disasters such as earthquakes, tsunamis, and cyclones. It offers detailed information and maps to help users understand the impact of these events. Users can also subscribe to receive alerts based on their location.</p>
+                    <p>GDACS provides real-time alerts about natural disasters such as earthquakes, tsunamis, and
+                        cyclones. It offers detailed information and maps to help users understand the impact of these
+                        events. Users can also subscribe to receive alerts based on their location.</p>
                 </div>
                 <button class="know-more-card"><a href="https://www.gdacs.org/" target="_blank">Know More</a></button>
             </div>
             <div class="card">
                 <div class="card-content">
-                    <p>Geolocation uses your device's latitude and longitude to deliver location-specific alerts like weather updates and emergency warnings. By tracking your exact position, it ensures you receive timely, relevant information to stay informed and safe based on your current location.</p>
+                    <p>Geolocation uses your device's latitude and longitude to deliver location-specific alerts like
+                        weather updates and emergency warnings. By tracking your exact position, it ensures you receive
+                        timely, relevant information to stay informed and safe based on your current location.</p>
                 </div>
-                <button class="know-more-card"><a href="">Know More</a></button>
+                <!-- <button class="know-more-card" onclick="geolocation()"><a href="#" onclick="geolocation()">Know More</a></button> -->
+                <button class="know-more-card" onclick="geolocation()">Know More</button>
             </div>
         </div>
     </section>
@@ -126,12 +139,12 @@
                     <img src="./images/1.png">
                     <button class="read-more"><a href="./article/Earthquake.html">Read More</a></button>
                 </div>
-                
+
                 <div class="slide">
                     <img src="./images/2.png">
                     <button class="read-more"><a href="./article/Flood.html">Read More</a></button>
                 </div>
-               
+
                 <div class="slide">
                     <img src="./images/3.png">
                     <button class="read-more"><a href="./article/Landslide.html">Read More</a></button>
@@ -174,7 +187,8 @@
             <div class="footer-container">
                 <div class="footer-col">
                     <h4>About Us</h4>
-                    <p>Rescue Ready is dedicated to providing timely and effective assistance during disasters. Our mission is to ensure community safety through rapid response.</p>
+                    <p>Rescue Ready is dedicated to providing timely and effective assistance during disasters. Our
+                        mission is to ensure community safety through rapid response.</p>
                     <div class="footer-icons">
                         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
@@ -197,7 +211,8 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="https://sachet.ndma.gov.in/" target="_blank">Sachet</a></li>
-                        <li><a href="https://www.india.gov.in/website-national-disaster-management-authority" target="_blank">NDMA</a></li>
+                        <li><a href="https://www.india.gov.in/website-national-disaster-management-authority"
+                                target="_blank">NDMA</a></li>
                         <li><a href="https://ndem.nrsc.gov.in/" target="_blank">NDEM</a></li>
                     </ul>
                 </div>
@@ -218,7 +233,7 @@
     </section>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const welcomeText = "USERNAME";
             let index = 0;
             function typeEffect() {
@@ -236,7 +251,41 @@
                 document.body.classList.toggle('light-mode');
             });
         });
+        function geolocation() {
+        // Function to get the user's current position
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+
+        // Function to display the latitude and longitude
+        function showPosition(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            alert("Latitude: " + latitude + "\nLongitude: " + longitude + "\nYour request for help has been sent.");
+        }
+
+        // Function to handle errors
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("User denied the request for Geolocation.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is unavailable.");
+                    break;
+                case error.TIMEOUT:
+                    alert("The request to get user location timed out.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("An unknown error occurred.");
+                    break;
+            }
+        }
+    }
     </script>
     <script src="script.js"></script>
 </body>
+
 </html>

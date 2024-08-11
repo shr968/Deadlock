@@ -111,7 +111,8 @@
                 <div class="card-content">
                     <p>Geolocation uses your device's latitude and longitude to deliver location-specific alerts like weather updates and emergency warnings. By tracking your exact position, it ensures you receive timely, relevant information to stay informed and safe based on your current location.</p>
                 </div>
-                <button class="know-more-card"><a href="">Know More</a></button>
+                <!-- <button class="know-more-card"><a href="">Know More</a></button> -->
+                <button class="know-more-card" onclick="geolocation()">Know More</button>
             </div>
         </div>
     </section>
@@ -233,6 +234,40 @@
                 document.body.classList.toggle('light-mode');
             });
         });
+
+        function geolocation() {
+        // Function to get the user's current position
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+
+        // Function to display the latitude and longitude
+        function showPosition(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            alert("Latitude: " + latitude + "\nLongitude: " + longitude + "\nYour request for help has been sent.");
+        }
+
+        // Function to handle errors
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("User denied the request for Geolocation.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is unavailable.");
+                    break;
+                case error.TIMEOUT:
+                    alert("The request to get user location timed out.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("An unknown error occurred.");
+                    break;
+            }
+        }
+    }
     </script>
     <script src="/script.js"></script>
 </body>
