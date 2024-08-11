@@ -61,8 +61,8 @@ body.light-mode h1{
 }
 .read-more{
   position:absolute;
-  bottom: 25%;
-  right: 33%;
+  bottom: 40px;
+  right: 95px;
   padding: 10px;
   background-color: rgb(230, 196, 230);
   border: none;
